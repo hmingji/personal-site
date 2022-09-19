@@ -1,11 +1,4 @@
-interface Props {
-  title: string;
-  description: string;
-  tags: string[];
-  appUrl: string;
-  sourceUrl: string;
-  imageUrl: string;
-}
+import { Project } from '../projects';
 
 export default function ProjectCard({
   title,
@@ -14,7 +7,7 @@ export default function ProjectCard({
   appUrl,
   sourceUrl,
   imageUrl,
-}: Props) {
+}: Project) {
   return (
     <div className="card bg-base-100 lg:card-side">
       <div className="card-body pb-4 lg:py-0">

@@ -1,4 +1,8 @@
-export default function Header() {
+interface Props {
+  handleScrollOnClick: () => void;
+}
+
+export default function Header({ handleScrollOnClick }: Props) {
   return (
     <header className="grid w-full place-items-center">
       <div className="flex navbar w-full justify-between">
@@ -11,15 +15,12 @@ export default function Header() {
 
         <ul className="flex gap-x-2.5">
           <li>
-            <a
-              href="/about"
+            <button
               className="font-medium"
+              onClick={handleScrollOnClick}
             >
-              about
-            </a>
-          </li>
-          <li>
-            <button className="font-medium">projects</button>
+              projects
+            </button>
           </li>
           <li>
             <button className="font-medium">resume</button>
