@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="grid w-full place-items-center">
-      <div className="flex navbar w-full justify-between sm:w-9/12">
+      <div className="flex navbar w-full justify-between">
         <a
           className="text-2xl font-semibold tracking-tighter"
           href="/"
