@@ -12,12 +12,29 @@ function App() {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleDownloadOnClick = () => {
+    fetch('/documents/RESUME_HENG MING JI-ver3-2022.pdf').then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        const alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'my-resume.pdf';
+        alink.click();
+      });
+    });
+  };
+
   return (
     <div
       data-theme="lofi"
       className="flex flex-col mx-auto sm:w-9/12 min-h-screen"
     >
-      <Header handleScrollOnClick={handleScrollOnClick} />
+      <Header
+        handleScrollOnClick={handleScrollOnClick}
+        handleDownloadOnClick={handleDownloadOnClick}
+      />
 
       <div className="flex-grow">
         <Hero />
@@ -25,7 +42,7 @@ function App() {
 
       <h2
         ref={ref}
-        className="text-slate-500"
+        className="text-slate-500 ml-2"
       >
         #Projects
       </h2>

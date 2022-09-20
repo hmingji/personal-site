@@ -15,7 +15,7 @@ export const projects: Project[] = [
     tags: [
       'React',
       'Typescript',
-      'ASP.NET',
+      'ASP.NET Core',
       'Redux-Toolkit',
       'Axios',
       'React Hook Form',

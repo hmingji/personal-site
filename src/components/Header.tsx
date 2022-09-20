@@ -1,8 +1,12 @@
 interface Props {
   handleScrollOnClick: () => void;
+  handleDownloadOnClick: () => void;
 }
 
-export default function Header({ handleScrollOnClick }: Props) {
+export default function Header({
+  handleScrollOnClick,
+  handleDownloadOnClick,
+}: Props) {
   return (
     <header className="grid w-full place-items-center">
       <div className="flex navbar w-full justify-between">
@@ -23,7 +27,12 @@ export default function Header({ handleScrollOnClick }: Props) {
             </button>
           </li>
           <li>
-            <button className="font-medium">resume</button>
+            <button
+              className="font-medium"
+              onClick={handleDownloadOnClick}
+            >
+              resume
+            </button>
           </li>
         </ul>
       </div>

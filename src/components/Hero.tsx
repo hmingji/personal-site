@@ -1,21 +1,22 @@
 import classNames from 'classnames';
-import { useRef } from 'react';
-import { useIntersectionObserver } from 'usehooks-ts';
+import { useEffect, useState } from 'react';
 
 export default function Hero() {
-  const ref = useRef<HTMLDivElement | null>(null);
-  //need to change into using something like uselayouteffect
-  const entry = useIntersectionObserver(ref, {});
+  const [runAnimation, setRunAnimation] = useState(false);
+
+  useEffect(() => {
+    setRunAnimation(true);
+  }, []);
 
   return (
     <div
-      ref={ref}
+      //ref={ref}
       className="hero my-20"
     >
       <div className="hero-content block">
         <div
           className={classNames(
-            entry?.isIntersecting
+            runAnimation
               ? 'opacity-100 translate-x-0'
               : 'opacity-0 -translate-x-6',
             'transition-all duration-[1100ms] ease-in-out'
@@ -28,13 +29,13 @@ export default function Hero() {
           <div
             className={classNames(
               'border-l-4 border-black pl-5 mt-2 transition-[max-height] duration-[1200ms] ease-in-out delay-[1100ms]',
-              entry?.isIntersecting ? 'max-h-60' : 'max-h-0'
+              runAnimation ? 'max-h-60' : 'max-h-0'
             )}
           >
             <div
               className={classNames(
                 'text-5xl font-bold transition-all duration-700 ease-in-out delay-[2000ms]',
-                entry?.isIntersecting
+                runAnimation
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 -translate-y-full'
               )}
@@ -43,8 +44,8 @@ export default function Hero() {
             </div>
             <div
               className={classNames(
-                'text-5xl font-bold transition-all duration-700 ease-in-out delay-[2200ms]',
-                entry?.isIntersecting
+                'text-5xl font-bold transition-all duration-700 ease-in-out delay-[2350ms]',
+                runAnimation
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 -translate-y-full'
               )}
