@@ -50,7 +50,7 @@ export default function Hero() {
                   : 'opacity-0 -translate-y-full'
               )}
             >
-              And I love to build stuffs with react.
+              And I love to build stuffs with react.🌻
             </div>
           </div>
         </div>

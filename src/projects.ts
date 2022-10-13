@@ -41,8 +41,25 @@ export const projects: Project[] = [
     description:
       'My personal site to showcase the projects I have been working on.',
     tags: ['React', 'Typescript', 'Tailwind CSS', 'daisyUI'],
-    appUrl: '',
+    appUrl: 'https://hmingji.com/',
     sourceUrl: 'https://github.com/hmingji/personal-site',
     imageUrl: '/images/project-image-personalsite.png',
+  },
+  {
+    title: 'whatToWatch(movies);',
+    description:
+      'A movie catalog site where user could find latest movie information, powered by tmdb api.',
+    tags: [
+      'React',
+      'Typescript',
+      'Tailwind CSS',
+      'daisyUI',
+      'React-Query',
+      'Redux-Toolkit',
+      'Axios',
+    ],
+    appUrl: 'https://what-to-watch-rosy.vercel.app/',
+    sourceUrl: 'https://github.com/hmingji/whatToWatch',
+    imageUrl: '/images/project-image-whatToWatch.png',
   },
 ];
