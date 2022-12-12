@@ -22,8 +22,9 @@ export const projects: Project[] = [
       'MUI',
       'IdentityServer4',
       'Docker',
+      'Postgres',
     ],
-    appUrl: 'http://demo-todo-apps-client.herokuapp.com/',
+    appUrl: 'http://todoapp-jtc5.onrender.com/',
     sourceUrl: 'https://github.com/hmingji/ToDoApp',
     imageUrl: '/images/project-image-todoapp.png',
   },
@@ -32,7 +33,7 @@ export const projects: Project[] = [
     description:
       'A pure javascript application to display audio spectrum, lyrics and playtime on html canvas.',
     tags: ['Javascript', 'CSS', 'HTML Canvas'],
-    appUrl: 'https://music-visual.herokuapp.com/',
+    appUrl: 'https://music-visualizer-gamma.vercel.app/',
     sourceUrl: 'https://github.com/hmingji/MusicVisualizer',
     imageUrl: '/images/project-image-musicvisual.png',
   },
@@ -61,5 +62,14 @@ export const projects: Project[] = [
     appUrl: 'https://what-to-watch-rosy.vercel.app/',
     sourceUrl: 'https://github.com/hmingji/whatToWatch',
     imageUrl: '/images/project-image-whatToWatch.png',
+  },
+  {
+    title: 'Maze Escaped',
+    description:
+      'Multiplayer io game: players have to find the flag in maze to win.',
+    tags: ['HTML5 Canvas', 'Socket-io', 'Express', 'Typescript'],
+    appUrl: 'https://maze-escaped.onrender.com/',
+    sourceUrl: 'https://github.com/hmingji/Maze-Escaped',
+    imageUrl: '/images/project-image-mazeescaped.png',
   },
 ];
