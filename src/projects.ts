@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     title: 'To-Do App',
     description:
-      'A complete full-stack to-do app built using react and asp.net, deployed using docker.',
+      'A complete full-stack to-do app built using react and asp.net core, deployed using docker. Added email notification feature to notify user about upcoming task.',
     tags: [
       'React',
       'Typescript',
@@ -23,6 +23,9 @@ export const projects: Project[] = [
       'IdentityServer4',
       'Docker',
       'Postgres',
+      'RabbitMQ',
+      'MassTransit',
+      'Mailjet',
     ],
     appUrl: 'http://todoapp-jtc5.onrender.com/',
     sourceUrl: 'https://github.com/hmingji/ToDoApp',
