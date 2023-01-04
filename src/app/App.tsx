@@ -13,7 +13,7 @@ function App() {
   };
 
   const handleDownloadOnClick = () => {
-    fetch('/documents/RESUME_HENG MING JI-ver4-2022.pdf').then((response) => {
+    fetch('/documents/RESUME_HENG MING JI-ver5-2023.pdf').then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
