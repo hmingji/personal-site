@@ -75,4 +75,19 @@ export const projects: Project[] = [
     sourceUrl: 'https://github.com/hmingji/Maze-Escaped',
     imageUrl: '/images/project-image-mazeescaped.png',
   },
+  {
+    title: 'Blood Donation Trend',
+    description:
+      'An interactive visualization of blood donation trend in Malaysia.',
+    tags: [
+      'Nextjs',
+      'ASP.NET Core',
+      'react-chartjs-2',
+      'Headless UI',
+      'Postgres',
+    ],
+    appUrl: 'https://blood-donation-trend.vercel.app/',
+    sourceUrl: 'https://github.com/hmingji/DataViz',
+    imageUrl: '/images/project-image-blooddonation.png',
+  },
 ];
